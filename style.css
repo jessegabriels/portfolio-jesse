@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 60px;
+}
+
+#carouselimages{
+	display: flex;
+	justify-content: center; /* Center the carousel horizontally */
+	align-items: center; /* Center the carousel vertically */
+	height: 100%; /* Ensure container fills the height of the viewport */
+}
+#carouselExampleIndicators {
+	width: 500px;
+	height: 300px;
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+i {
+	margin-right: 10px;   
+}
+
+hr{
+    color: #5161ce;
+}
+
+.isRounded{
+    border-radius: 10px;
+}
+
+#navbar-animmenu {
+	background: #5161ce;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	padding: 10px 0px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;;
+}
+#navbar-animmenu ul{
+	padding: 0px;
+	margin: 0px;
+  
+}
+
+#navbar-animmenu ul li a i{
+	margin-right: 10px;
+}
+
+#navbar-animmenu li {
+	list-style-type: none;
+	float: left;
+}
+
+#navbar-animmenu ul li a{
+	color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 45px;
+    display: block;
+    padding: 0px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+
+#navbar-animmenu>ul>li.active>a{
+	color: #5161ce;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+
+#navbar-animmenu a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10%;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+
+#navbar-animmenu a:hover{
+	color: #ffffff;
+	transition: all 0.4s;
+}
+
+#navbar-animmenu .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+}
+
+.hori-selector{
+	display:inline-block;
+	position:absolute;
+	height: 100%;
+	top: 10px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: #fff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.hori-selector .right,
+.hori-selector .left{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	bottom: 10px;
+}
+
+.hori-selector .right{
+	right: -25px;
+}
+
+.hori-selector .left{
+	left: -25px;
+}
+
+.hori-selector .right:before,
+.hori-selector .left:before{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5161ce;
+}
+
+.hori-selector .right:before{
+	bottom: 0;
+    right: -25px;
+}
+
+.hori-selector .left:before{
+	bottom: 0;
+    left: -25px;
+}
+
+img {
+    width: 85%;
+    height: auto;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+	transition: transform 0.3s ease-in-out;
+}
+img:hover {
+	transform: scale(1.05) translateY(-10px);
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+#gezicht {
+    display: block;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    padding-top: -50px;
+}
+
+.jumbotron p{
+    color: black;
+}
+
+.centermain{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.circle-btn {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding-left: 10px;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #5161ce;
+	color: #fff;
+	font-size: 24px;
+	transition: background-color 0.3s ease-in-out;
+  }
+  
+.circle-btn:hover {
+	background-color: #ffffff;
+	color:  #5161ce;
+}
+
+.circle-btn i {
+	display: inline-block;
+	margin-top: 8px;
+}
+
+.btnCV{
+	background-color: #5161ce;
+	color: #ffffff;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btnCV:hover{
+	background-color: #ffffff;
+	color:  #5161ce;
+	border-color: #5161ce;
+}
+
+.link{
+	color:  #5161ce;
+	text-decoration: none;
+}
+
+.fa-users, .fa-user{
+	color:  #5161ce;
+}
+
+
+  
+
+@media (min-width: 700px) {
+	.anim{
+		opacity: 0;
+		transform: translateX(-50%);
+		animation-name: fadeIn;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+	}
+	
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+			transform: translateX(10%);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0%);
+		}
+	}
+
+	.slide-in-top {
+		animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		animation-delay: 1s;
+	}
+	
+	@keyframes slide-in-top {
+		0% {
+		  -webkit-transform: translateY(-1000px);
+				  transform: translateY(-1000px);
+		  opacity: 0;
+		}
+		100% {
+		  -webkit-transform: translateY(0);
+				  transform: translateY(0);
+		  opacity: 1;
+		}
+	}
+
+	.focus-in-expand {
+		animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		animation-delay: 1s;
+	}
+
+	@keyframes focus-in-expand {
+		0% {
+			letter-spacing: -0.5em;
+			filter: blur(12px);
+		  	opacity: 0;
+		}
+		100% {
+			filter: blur(0px);
+		  	opacity: 1;
+		}
+	}
+
+	.wobble-hor-bottom {
+		animation: wobble-hor-bottom 0.8s both;
+		animation-delay: 40s;
+	}
+
+	@keyframes wobble-hor-bottom {
+		0%,
+		100% {
+			transform: translateX(0%);
+			transform-origin: 50% 50%;
+		}
+		15% {
+			transform: translateX(-30px) rotate(-6deg);
+		}
+		30% {
+			transform: translateX(15px) rotate(6deg);
+		}
+		45% {
+			transform: translateX(-15px) rotate(-3.6deg);
+		}
+		60% {
+			transform: translateX(9px) rotate(2.4deg);
+		}
+		75% {
+			transform: translateX(-6px) rotate(-1.2deg);
+		}
+	}
+
+	.tracking-in-contract-bck-top {
+		animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	}
+
+	@keyframes tracking-in-contract-bck-top {
+	0% {
+		letter-spacing: 1em;
+		transform: translateZ(400px) translateY(-300px);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		transform: translateZ(0) translateY(0);
+		opacity: 1;
+	}
+	}
+
+}
+
+.youtubelink{
+	background-image: linear-gradient(
+    to right,
+    #5161ce,
+    #ffffff 50%,
+    #5161ce 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.youtubelink:before {
+	content: '';
+	background: #5161ce;
+	display: block;
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 0;
+	height: 3px;
+	transition: all 0.3s ease-in-out;
+}
+  
+.youtubelink:hover {
+background-position: 0;
+}
+
+.youtubelink:hover::before {
+width:100%;
+}
+
+#sum ul{
+	list-style: none;
+}

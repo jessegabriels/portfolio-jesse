@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Jesse Gabriëls</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="bg-dark text-light centermain">
+  <div id="navbar-animmenu" class="d-flex justify-content-center">
+    <ul class="show-dropdown main-navbar">
+        <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="aboutme.html">Over mij</a>
+        </li>
+        <li class="active">
+            <a href="#">Projecten</a>
+        </li>
+        <li>
+          <a href="stage.html">Stage</a>
+      </li>    
+    </ul>
+  </div>
+  <br>
+  <br>
+  <div class="container my-5" id="projects">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <p>Op deze pagina vindt je een aantal projecten die ik afgelopen twee jaar heb gemaakt.</p>
+        <p>
+          <i class="fa fa-user"></i>= Project zelfstandig gemaakt. <br> <i class="fa fa-users"></i>= Project in groep gemaakt.
+        </p>
+      </div>
+      <div class="col-md-3 col-sm-12" id="sum">
+        <ul class="">
+          <li><a href="#robotvoetbal" class="youtubelink tracking-in-contract-bck-top">&bull; Robotvoetbal</a> </li>
+          <li><a href="#camera" class="youtubelink tracking-in-contract-bck-top">&bull; Gezichtsherkennings camera</a> </li>
+          <li><a href="#agrosense" class="youtubelink tracking-in-contract-bck-top">&bull; AgroSense</a> </li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-12" id="sum">
+        <ul class="">
+          <li><a href="#pompaul" class="youtubelink tracking-in-contract-bck-top">&bull; PomPaul</a></li>
+          <li><a href="#gameboy" class="youtubelink tracking-in-contract-bck-top">&bull; Game Boy</a></li>
+          <li><a href="#voltswap" class="youtubelink tracking-in-contract-bck-top">&bull; Voltswap</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <hr size="7">
+    <div id="carouselimages" class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="width: 800px; height: 500px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#gezicht"><img class="d-block w-100" src="images/gezichtsherkenning2.png" alt="frog" /></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#robotvoetbal"><img class="d-block w-100" src="images/Robotvoetbal.png" alt="frog" /></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#agrosense"><img class="d-block w-100" src="images/Agrosense.png" alt="frog" /></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#pompaul"><img class="d-block w-100" src="images/PomPaul.png" alt="frog" /></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#gameboy"><img class="d-block w-100" src="images/GameBoy.png" alt="frog" /></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#voltswap"><img class="d-block w-100" src="images/voltswap.png" alt="frog" /></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <h2 class="youtubelink" id="robotvoetbal">Robotvoetbal <i class="fa fa-users"></i></h2>
+        <h4>Context</h4>
+        <p>
+          Voor het vak System Engineering & Analysis kregen we dit jaar een project als team voor een opdrachtgever. Onze opdrachtgever wilde een product dat leerlingen van een 
+          middelbare school aanzet om IT te studeren aan de ITFactory van Thomas More Geel. Om te laten zien dat als je IT wilt studeren geen wiskundeknobbel moet zijn, moest er wiskunde in 
+          verwerkt worden. Omdat rond die tijd het Europees Kampioenschap voetbal plaats vond, ontstond er de combinatie van IT, wiskunde en voetbal.
+        </p>
+        <h4>Realisatie</h4>
+        <p>
+          Na een paar meetings met de opdrachtgever kwamen we tot het besluit om robots te maken.
+          De wiskunde wordt verwerkt in het programmeren. De robots kunnen afhankelijk van de studierichting aangepast worden. Zo kan er in een STEM richting
+          geprogrammeerd worden in C maar voor een Latijn-Wiskunde richting kan dit een probleem zijn. Hierdoor kan er voor de minder technische richtingen geprogrammeerd worden met blokken
+          net zoals Scratch.
+        </p>
+        <p> 
+          Het design van de robot werkt met een klik systeem. Ik heb een design gemaakt dat ervoor zorgt dat de robots zo compact mogelijk zijn zodat ze makkelijk zijn mee te nemen. 
+          De verschillende onderdelen kunnen makkelijk in en uit elkaar worden gehaald zodat de leerlingen op een leuke en eenvoudiger manier in contact komen met IT.
+        </p>
+        <h4>Vervolg</h4>
+        <p>
+          Om het volledige idee van dit project uit te voeren, zijn we met onze groep de robots gaan voorstellen in een middelbare school. Dit was een opdracht voor het vak 
+          Professional Skills 2. We kregen de taak om een trainingssessie te geven naar keuze. Wij als groep vonden dit het ideale moment om de opdracht van de robots verder uit te werken.
+          De trainingssessie hebben we gegeven aan een klas Elektriciteit-Elektronica in het 6de jaar aan SILA Westerlo. De leerlingen waren heel enthousiast over de robots en hebben 
+          ze zelfstandig mogen programmeren.
+        </p>
+        
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <picture>
+          <img class="my-md-5" src="images/robot.jpg" alt="robot">
+        </picture>
+        <p class="col-12 d-flex justify-content-center"><a href="https://youtu.be/-vDtlM7xHeM" target="_blank" class="link youtubelink">Bekijken op YouTube <i class="fa fa-youtube-play" aria-hidden="true"></i></a> </p>
+      </div>   
+    </div>
+    <br>
+    <hr size="7">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="youtubelink" id="camera">Gezichtsherkennings camera <i class="fa fa-user"></i></h2>
+        <h4>Context</h4>
+        <p>Een camera met gezichtsherkenning was één van mijn eerste projecten dat ik zelf heb gemaakt aan de hoge school van Thomas More. Zoals de naam zelf zegt, het is een camera die gezichten kan herkennen.
+          Deze opdracht kregen we in het eerste jaar voor het vak Professional Skills 1. We kregen zelf de vrijheid om een project te realiseren naar keuze. Er was één voorwaarde; 
+          Het moest te maken hebben met de keuzerichting die je in het 2de jaar wilde volgen. Ik was op dat moment nog aan het twijfelen tussen Cloud & Cyber Security (CCS) en 
+          Internet of Things (IoT). Hierdoor heb ik de twee gecombineerd en een beveiligingscamera gemaakt van IoT componenten met gezichtsherkenning. 
+        </p>
+        <h4>Realisatie</h4>
+        <p>
+          Het doel van dit project is om de camera ergens bij een deur te hangen. Met behulp van Machine Learning kan je enkele foto's nemen van de gezichten van je medebewoners en jezelf.
+          Hierdoor herkent de camera het gezicht van jouw en je medebewoners. Als er vervolgens iemand vreemd aan de deur staat, word deze persoon als "unknown" beschouwd. Hierna word er een sms
+          bericht verstuurd naar de eigenaar met de mededeling dat er iemand vreemd aan de deur staat. Met dit bericht wordt er ook een foto meegestuurd zodat je zelf kan zien wie er nu echt
+          aan de deur staat.
+        </p>
+        <p>
+          Op dit project zijn er ook enkele uitbreidingsmogelijkheden. Zo kan er een slim slot worden aangesloten. Als er een medebewoner aan de deur staat, kan de deur losgemaakt worden.
+          Er kan ook worden uitgebreid op postbezorging omdat nu pakketjes meestal aan de deur worden gezet. De camera kan mogelijks ook detecteren dat een pakketje aan de deur staat
+          en vervolgens een melding sturen.
+        </p>
+        <div class="col-sm-12 col-md-8 mx-auto d-block">
+          <picture>
+            <img id="gezicht" src="images/gezichtsherkenning.jpg" alt="gezichtherkennings camera">
+          </picture>
+          <p class="col-12 d-flex justify-content-center"><a href="https://youtu.be/r-cksD4mRp0" target="_blank" class="link youtubelink">Bekijken op YouTube <i class="fa fa-youtube-play" aria-hidden="true"></i></a> </p>
+        </div>
+      </div>
+    </div>
+    
+    <hr size="7">
+    <div class="row">
+      <div class="col-sm-12 col-md-7">
+          <h2 class="youtubelink" id="agrosense">AgroSense <i class="fa fa-users"></i></h2>
+          <h4>Context</h4>
+          <p>Voor het vak Embedded Devices Essentials hebben we dit jaar ook een project gemaakt. We kregen een aantal opties aangeboden en mijn groep en ik hebben gekozen voor het volgende project:</p>
+          <p>
+            De probleemstelling is dat landbouwers in Tanzania heel vaak te veel of te weinig water aan hun gewassen geven. Soms is het ook zo dat de landbouwer vele kilometers moet afleggen 
+            om er vervolgens achter te komen dat zijn gewassen geen water nodig hebben. Om dit op te lossen gaan wij het volgende systeem maken. 
+          </p>
+          <h4>Realisatie</h4>
+          <p>
+            AgroSense is een systeem dat een aantal metingen uitvoert om het halfuur. Deze zijn: temperatuur, luchtvochtigheid, luchtdruk, methaangas en vochtigheid op 
+            twee niveaus. Deze metingen worden doorgestuurd naar de landbouwer zodat hij of zij niet langer tijd hoeft te verdoen om naar hun land te wandelen met water. Om ervoor te zorgen dat 
+            systeem volledig 'off-grid' kan gebruikt worden, hebben we het uitgerust met een zonnepaneel en een batterij. Hierdoor kan het systeem een lange tijd zonder zon.
+            Omdat we ervan uitgaan dat niet iedereen kennis heeft van elektronica hebben we ervoor gekozen om een klik systeem te maken. Wij produceren een PCB (Printed Curcuit Board)
+            met een aantal aansluitingen voor de sensoren. Hierdoor is het enorm makkelijk te monteren. Het enige wat er moet gebeuren is de juiste sensor aan de juiste connector hangen.
+            De landbouwer kan dit pakket zelf samenstellen. Als een bepaalde sensor niet nodig is, kan deze simpel weg worden weggelaten.
+          </p>
+          <p>
+            Dit project gaat verder dan alleen maar Tanzania. Dit systeem kan over heel de wereld worden gebruikt. Hierdoor hopen wij een steentje bij te dragen aan een effeciëntere en 
+            ecologische landbouw.
+          </p>
+          <p>
+            Dit academiejaar deden we met dit project mee aan de More ICE Awards. Jammer genoeg hadden we in de stemronde net niet genoeg punten om door te gaan.
+          </p>
+      </div>
+      <div class="col-sm-12 col-md-5">
+        <img class="my-md-5" src="images/pcb.png" alt="PCB">
+      </div>
+    </div>
+
+    <hr size="7">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="youtubelink" id="pompaul">PomPaul <i class="fa fa-users"></i></h2>
+        <h4>Context</h4>
+        <p>
+          Voor het vak Project IoT hebben we dit jaar de opdracht gekregen om de pompoenserre van Paul Boonen te automatiseren. Paul Boonen is een docent aan Thomas More Geel en kweekt reuzenpompoenen.
+          Omdat hij jaarlijks meedoet aan de wedstrijd om de grootste
+          en zwaarste pompoen te kweken, willen wij hem hierbij helpen. Vorig jaar hebben onze voorgangers in 2IoT dit ook al gedaan. Jammer genoeg zijn er een aantal dingen die stuk 
+          zijn gegaan. Zowel door slijtage van componenten als een nieuwsgierige eigenaar. Om dit op te lossen gaan we er dit jaar alles aan doen om de serre perfect af te werken.
+        </p>
+        <h4>Realisatie</h4>
+        <p>
+          Paul heeft ons een aantal basisvereisten doorgegeven. Zo moeten er een aantal sensoren in de serre hangen die de temperatuur, CO2 en het licht meet. Op basis van deze waardes
+          worden er een aantal componenten aangestuurd. Als het bijvoorbeeld te warm is, zullen de ramen automatisch opengaan.
+        </p>
+        <p>
+          Verder zijn er ook nog een aantal routines die dagelijks moeten worden uitgevoerd: 
+        </p>
+        <ul>
+          <li>
+            Elke ochtend moet de dauw uit te serre worden getrokken. Om dit te doen zullen de ramen en de deuren 
+            opengaan en zullen er 2 ventilatoren aangaan. 
+          </li>
+          <li>
+            In de nacht moet er water worden opgepompt uit de grond. Dit water wordt opgeslagen in 2 vaten van 1000L. Vervolgens kan het water overdag 
+            wat opwarmen en verdeeld worden over de pompoenen.
+          </li>
+        </ul>
+        <p>
+          Al deze informatie van de sensoren en de manuele aansturingen zullen beschikbaar zijn in een app met een database. In deze app kan je in voor elke waarde een grafiek zien zodat
+          je de serre kan monitoren. Als Paul beslist om zelf de ramen manueel te openen, kan dit met een simpele druk op de knop. Verder is er ook nog een livestream te zien. Hierdoor
+          kan je als je niet thuis ben toch in de serre kijken.
+        </p>
+        <p>
+          Een extraatje dat ikzelf heb gemaakt is een schaalmodel van de serre. Hiervoor heb ik een aantal foto's genomen van de serre en vervolgens heb ik zelf nagebouwd 
+          met een softwareprogramma. Hierna heb ik de serre en de toebehoren gemaakt met mijn 3D-printers. Om alles zo correct mogelijk te maken heb ik alles ook geschilderd. 
+        </p>
+      </div>
+    </div>
+    <hr size="7">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <h2 class="youtubelink" id="gameboy">Game Boy <i class="fa fa-user"></i></h2>
+        <h4>Context</h4>
+        <p>
+          Voor het vak System Engineering & Analysis kregen we dit jaar een project als team voor een opdrachtgever. Onze opdrachtgever wilde een product dat leerlingen van een 
+          middelbare school aanzet om IT te studeren aan de ITFactory van Thomas More Geel. Om te laten zien dat als je IT wilt studeren geen wiskundeknobbel moet zijn, moest er wiskunde in 
+          verwerkt worden. Omdat rond die tijd het Europees Kampioenschap voetbal plaats vond, ontstond er de combinatie van IT, wiskunde en voetbal.
+        </p>
+        <h4>Realisatie</h4>
+        <p>
+          Na een paar meetings met de opdrachtgever kwamen we tot het besluit om robots te maken.
+          De wiskunde wordt verwerkt in het programmeren. De robots kunnen afhankelijk van de studierichting aangepast worden. Zo kan er in een STEM richting
+          geprogrammeerd worden in C maar voor een Latijn-Wiskunde richting kan dit een probleem zijn. Hierdoor kan er voor de minder technische richtingen geprogrammeerd worden met blokken
+          net zoals Scratch.
+        </p>
+        <p> 
+          Het design van de robot werkt met een klik systeem. Ik heb een design gemaakt dat ervoor zorgt dat de robots zo compact mogelijk zijn zodat ze makkelijk zijn mee te nemen. 
+          De verschillende onderdelen kunnen makkelijk in en uit elkaar worden gehaald zodat de leerlingen op een leuke en eenvoudiger manier in contact komen met IT.
+        </p>
+        <h4>Vervolg</h4>
+        <p>
+          Om het volledige idee van dit project uit te voeren, zijn we met onze groep de robots gaan voorstellen in een middelbare school. Dit was een opdracht voor het vak 
+          Professional Skills 2. We kregen de taak om een trainingssessie te geven naar keuze. Wij als groep vonden dit het ideale moment om de opdracht van de robots verder uit te werken.
+          De trainingssessie hebben we gegeven aan een klas Elektriciteit-Elektronica in het 6de jaar aan SILA Westerlo. De leerlingen waren heel enthousiast over de robots en hebben 
+          ze zelfstandig mogen programmeren.
+        </p>
+        
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <picture>
+          <img class="my-md-5" src="images/GameBoy.png" alt="robot">
+        </picture>
+        <p class="col-12 d-flex justify-content-center"><a href="https://youtu.be/AkkkIASvocs" target="_blank" class="link youtubelink">Bekijken op YouTube <i class="fa fa-youtube-play" aria-hidden="true"></i></a> </p>
+      </div>   
+    </div>
+    <br>
+    <hr size="7">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <h2 class="youtubelink" id="voltswap">Voltswap <i class="fa fa-users"></i></h2>
+        <h4>Context</h4>
+        <p>
+          Voor het vak System Engineering & Analysis kregen we dit jaar een project als team voor een opdrachtgever. Onze opdrachtgever wilde een product dat leerlingen van een 
+          middelbare school aanzet om IT te studeren aan de ITFactory van Thomas More Geel. Om te laten zien dat als je IT wilt studeren geen wiskundeknobbel moet zijn, moest er wiskunde in 
+          verwerkt worden. Omdat rond die tijd het Europees Kampioenschap voetbal plaats vond, ontstond er de combinatie van IT, wiskunde en voetbal.
+        </p>
+        <h4>Realisatie</h4>
+        <p>
+          Na een paar meetings met de opdrachtgever kwamen we tot het besluit om robots te maken.
+          De wiskunde wordt verwerkt in het programmeren. De robots kunnen afhankelijk van de studierichting aangepast worden. Zo kan er in een STEM richting
+          geprogrammeerd worden in C maar voor een Latijn-Wiskunde richting kan dit een probleem zijn. Hierdoor kan er voor de minder technische richtingen geprogrammeerd worden met blokken
+          net zoals Scratch.
+        </p>
+        <p> 
+          Het design van de robot werkt met een klik systeem. Ik heb een design gemaakt dat ervoor zorgt dat de robots zo compact mogelijk zijn zodat ze makkelijk zijn mee te nemen. 
+          De verschillende onderdelen kunnen makkelijk in en uit elkaar worden gehaald zodat de leerlingen op een leuke en eenvoudiger manier in contact komen met IT.
+        </p>
+        <h4>Vervolg</h4>
+        <p>
+          Om het volledige idee van dit project uit te voeren, zijn we met onze groep de robots gaan voorstellen in een middelbare school. Dit was een opdracht voor het vak 
+          Professional Skills 2. We kregen de taak om een trainingssessie te geven naar keuze. Wij als groep vonden dit het ideale moment om de opdracht van de robots verder uit te werken.
+          De trainingssessie hebben we gegeven aan een klas Elektriciteit-Elektronica in het 6de jaar aan SILA Westerlo. De leerlingen waren heel enthousiast over de robots en hebben 
+          ze zelfstandig mogen programmeren.
+        </p>
+        
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <picture>
+          <img class="my-md-5" src="images/voltswap.png" alt="robot">
+        </picture>
+        <p class="col-12 d-flex justify-content-center"><a href="https://www.youtube.com/watch?v=Ka7W5jWSsdY" target="_blank" class="link youtubelink">Bekijken op YouTube <i class="fa fa-youtube-play" aria-hidden="true"></i></a> </p>
+      </div>   
+    </div>
+    <br>
+    <hr size="7">
+    <div class="col-12 d-flex justify-content-center">
+      <a href="#"><button class="btn btnCV"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Naar boven</button></a>
+    </div>
+    <hr size="7">
+
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+            
+          <a href="https://www.linkedin.com/in/jesse-gabri%C3%ABls-201a30253/" class="circle-btn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;
+          <a href="https://www.instagram.com/jessegabriels/" class="circle-btn"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;
+          <a href="https://github.com/jessegabriels" class="circle-btn"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;
+          <a href="mailto:r0882112@student.thomasmore.be" class="circle-btn"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+        </section>
+      </div>
+      <div class="text-center p-3">
+        &copy 2024 Jesse Gabriëls
+      </div>
+    </footer>
+  </div>
+
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
