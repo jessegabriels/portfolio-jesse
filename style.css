@@ -5,7 +5,7 @@ body{
 	margin-bottom: 60px;
 }
 
-#carouselimages{
+#carouselimages, #carouselvs{
 	display: flex;
 	justify-content: center; /* Center the carousel horizontally */
 	align-items: center; /* Center the carousel vertically */
@@ -31,6 +31,12 @@ hr{
 
 .isRounded{
     border-radius: 10px;
+}
+
+.vertical-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #navbar-animmenu {
