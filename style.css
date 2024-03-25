@@ -49,11 +49,11 @@ hr{
 	justify-content: center;
 	align-items: center;
 	height: 100%; /* Ensures the container takes full height */
-  }
+}
   
-  .images-container picture {
+.images-container picture {
 	margin-bottom: 20px; /* Adjust this value to your liking */
-  }
+}
 
 
 

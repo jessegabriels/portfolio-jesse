@@ -118,14 +118,25 @@
       <div class="col-12">
         <h4>Op Hivset</h4>
           <p>
-            
+            Momenteel heeft Hivset 3 Modbus installaties van 2 fabrikanten. Twee van Priva en één van Siemens. Deze dienen allemaal voor de verwarming en verluchting van de hele campus.
+            Om alle datapunten te kunnen zien word er gebruik gemaakt van BACnet. 
+            Tijdens mijn eerste 3 weken had ik hierover heel wat informatie over opgezocht. Wanneer ik probeerde om de bestaande installaties in Home Assistant weer te geven, stoote ik op een probleem.
+            Enkel de Siemens installatie kreeg ik te zien. Priva systemen zijn afgeschermd van het internet en communiceren op hun eigen privé Priva-netwerk. Verder bleek ook dat de Priva systemen geen BACnet 
+            geconfigureerd hadden. Dit was bewust zo gedaan omdat anders de garantie van de installatie wegviel. De Siemens installatie die ik wel zag had ook geen succes. Telkens ik deze probeerde aan te sturen 
+            vanuit Home Assistant, werd het commando overschreven door het programma op de Modbus installatie.
           </p>
-      </div> 
-      
-      
-          
-         
+          <p>
+            Mijn originele stageopdracht bleek dus niet te werken. Maar we hadden wel een work around gevonden. In plaats van de Modbus installatie aan te spreken met commando's, gingen we werken 
+            met overwerktimers. Hiermee konden we bepaalde elektrische kringen onderbreken vanuit Home Assistant.
+          </p>
+      </div>    
+      <div class="col-4"></div>
+      <div class="col-4 vertical-center">
+        <a href="documents/" target="_blank" ><button class="btn btnCV"><i class="fa-solid fa-bolt"></i>Modbus verslag</button></a>
+
+      </div>
     </div>
+    
     <br>
     <hr size="7">
 
