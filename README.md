@@ -1,3 +1,3 @@
 # portfolio-jesse
 
-https://portfolio-jg.netlify.app/
+https://portfolio-jessegabriels.netlify.app/
