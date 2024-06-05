@@ -43,28 +43,35 @@
       <div class="col-md-8 col-sm-12 text-secondary">
         <h2 class="display-6 focus-in-expand">Hivset</h2>
         <p>
-          Tijdens mijn laatste jaar moesten we stage lopen van 26 february tot en met 24 mei. Tijdens mijn zoektocht 
-          naar mogelijke bedrijven kwam ik uit bij Hivset. Hivset Turnhout is een schoolcampus met een focus op opleidingen in de gezondheidszorg. 
+          Tijdens mijn laatste jaar moesten we stage lopen van 26 februari 2024 tot en met 24 mei 2024. Tijdens mijn zoektocht 
+          naar mogelijke bedrijven kwam ik uit bij Hivset. Hivset Turnhout is een onderwijsinstelling die zich richt op gezondheiszorg en welzijn. 
         </p>
         <p>
-          Toen ik Tom Adriaensen contacteerde, nodigde hij mij uit voor een kennismaking.
-          Op Hivset zelf werd ik warm ontvangen en kreeg ik meteen een rondleiding. Omdat Hivset een school is, is er heel veel variatie voor 
-          IoT projecten.
+          Sinds mei 2023 heeft Hivset een Home Assistant draaien om bepaalde zaken te automatiseren. Deze installatie moest verder 
+          geoptimaliseerd worden en gekoppeld worden aan een aantal Modbus-installaties. Verder zijn er nog allerlei andere 
+          projecten zoals het koppelen van een verwarmings/koelings-installatie en het optimaliseren van een waterpomp installatie. 
+          Daarnaast is Hivset een school dus ik moest ook meedraaien in de dagelijkse werking van de ict-coördinatie. 
         </p>
+        <h2>Verslagen</h2>
         <p>
-          Sinds mei 2023 hebben ze op Hivset een Home Assistant draaien om bepaalde zaken te automatiseren. Deze installatie moet verder 
-          geoptimaliseerd worden en gekoppeld worden aan een nieuwe Modbus installatie in een nieuwbouw. Verder zijn er nog allerlei andere 
-          projecten zoals een verwarmingsinstallatie regelen via Home Assistant. Daarnaast is Hivset een school dus ik moest ook meedraaien 
-          in de dagelijkse werking van de ict-coördinatie. 
+          Hieronder vindt u de documenten die ik in het kader van mijn stage heb gemaakt en die dieper ingaan op bepaalde aspecten hiervan:
         </p>
-        <p>
-          Hieronder kan je allerlei zaken terugvinden in verband met mijn stage. Lees er gerust eens door of gebruik opsomming om snel naar 
-          een specifiek hoofdstuk te navigeren.
-        </p>
+        <div class="col-md-3 col-sm-12" id="sum">
+          <ul class="">
+            <li><a href="documents/PlanVanAanpak.pdf" target="_blank" class="sumlink tracking-in-contract-bck-top">&bull; Plan Van Aanpak</a> </li>
+            <li><a href="documents/Sonoff&Tasmota.pdf" target="_blank" class="sumlink tracking-in-contract-bck-top">&bull; Sonoff & Tasmota</a> </li>
+            <li><a href="documents/Home Assistant Blueprints.pdf" target="_blank" class="sumlink tracking-in-contract-bck-top">&bull; Blueprints</a> </li>
+            <li><a href="documents/Waterput.pdf" target="_blank" class="sumlink tracking-in-contract-bck-top">&bull; Waterput</a> </li>
+            <li><a href="documents/StageVerslag.pdf" target="_blank" class="sumlink tracking-in-contract-bck-top">&bull; Stageverslag</a> </li>
+            <li><a href="documents/ReflectieHivset.pdf" target="_blank" class="sumlink tracking-in-contract-bck-top">&bull; Reflectie</a></li>
+          </ul>
+        </div>
         
       </div>
       <div class="col-md-4 col-sm-12 focus-in-expand">
-        <a href="https://www.hivset.be/" target="_blank"><img id="hivset" src="images/hivset.png" alt="logo Hivset"></a>
+        <img id="hivset" src="images/hivset.png" alt="logo Hivset">
+        <img id="hivset" src="images/hivsetInkome.jpg" alt="logo Hivset">
+        <br>
         <div class="vertical-center">
           <a href="https://www.hivset.be/" target="_blank" ><button class="btn btnCV"><i class="fab fa-chrome"></i>Hivset</button></a>
         </div>
@@ -72,102 +79,7 @@
     </div>
     <br>
     <hr size="7">
-    <div class="row">
-      <div class="col-md-3 col-sm-12"></div>
-      <div class="col-md-3 col-sm-12" id="sum">
-        <ul class="">
-          <li><a href="#modbus" class="youtubelink tracking-in-contract-bck-top">&bull; Modbus</a> </li>
-          <li><a href="#ha" class="youtubelink tracking-in-contract-bck-top">&bull; Home Assistant</a> </li>
-          <li><a href="#agrosense" class="youtubelink tracking-in-contract-bck-top">&bull; Sonoff</a> </li>
-          <li><a href="#pompaul" class="youtubelink tracking-in-contract-bck-top">&bull; ...</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-12" id="sum">
-        <ul class="">
-          <li><a href="#bip" class="youtubelink tracking-in-contract-bck-top">&bull; ...</a></li>
-          <li><a href="#energy" class="youtubelink tracking-in-contract-bck-top">&bull; ...</a></li>
-          <li><a href="#gameboy" class="youtubelink tracking-in-contract-bck-top">&bull; ...</a></li>
-          <li><a href="#voltswap" class="youtubelink tracking-in-contract-bck-top">&bull; ...</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-12"></div>
 
-    </div>
-
-    <hr size="7">
-
-    <div class="row">
-      <div class="col-md-8 col-sm-12">
-        <h2 class="youtubelink" id="modbus">Modbus</h2>
-        <p>
-          Modbus is een veelgebruikt communicatieprotocol dat wordt gebruikt in de industriële automatisering. 
-          Het maakt verbindingen mogelijk tussen apparaten zoals sensoren, actuatoren en programmeerbare logische 
-          controllers (PLC's). Met Modbus kunnen deze apparaten gegevens uitwisselen en opdrachten naar elkaar 
-          sturen via een seriële verbinding (RS-232/RS-485) of een Ethernet-netwerk. Het protocol is eenvoudig en 
-          efficiënt, en het wordt vaak gebruikt voor het bewaken en besturen van processen in fabrieken, 
-          gebouwautomatiseringssystemen en andere industriële toepassingen. Modbus kent verschillende varianten, 
-          zoals Modbus RTU (Remote Terminal Unit), Modbus ASCII en Modbus TCP/IP, die verschillende transport- en 
-          berichtformaten ondersteunen.
-        </p>
-      </div>
-      <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
-        <picture>
-          <img src="images/modbus.png" alt="">
-        </picture>
-      </div>
-      <div class="col-12">
-        <h4>Op Hivset</h4>
-          <p>
-            Momenteel heeft Hivset 3 Modbus installaties van 2 fabrikanten. Twee van Priva en één van Siemens. Deze dienen allemaal voor de verwarming en verluchting van de hele campus.
-            Om alle datapunten te kunnen zien word er gebruik gemaakt van BACnet. 
-            Tijdens mijn eerste 3 weken had ik hierover heel wat informatie over opgezocht. Wanneer ik probeerde om de bestaande installaties in Home Assistant weer te geven, stoote ik op een probleem.
-            Enkel de Siemens installatie kreeg ik te zien. Priva systemen zijn afgeschermd van het internet en communiceren op hun eigen privé Priva-netwerk. Verder bleek ook dat de Priva systemen geen BACnet 
-            geconfigureerd hadden. Dit was bewust zo gedaan omdat anders de garantie van de installatie wegviel. De Siemens installatie die ik wel zag had ook geen succes. Telkens ik deze probeerde aan te sturen 
-            vanuit Home Assistant, werd het commando overschreven door het programma op de Modbus installatie.
-          </p>
-          <p>
-            Mijn originele stageopdracht bleek dus niet te werken. Maar we hadden wel een work around gevonden. In plaats van de Modbus installatie aan te spreken met commando's, gingen we werken 
-            met overwerktimers. Hiermee konden we bepaalde elektrische kringen onderbreken vanuit Home Assistant.
-          </p>
-      </div>    
-      <div class="col-4"></div>
-      <div class="col-4 vertical-center">
-        <a href="documents/" target="_blank" ><button class="btn btnCV"><i class="fa-solid fa-bolt"></i>Modbus verslag</button></a>
-
-      </div>
-    </div>
-    
-    <br>
-    <hr size="7">
-
-    <div class="row">
-      <div class="col-md-8 col-sm-12">
-        <h2 class="youtubelink" id="ha">Home Assistant</h2>
-        <p>
-          Home Assistant is een open-source domoticaplatform dat wordt gebruikt om slimme apparaten in huis te automatiseren 
-          en te integreren. Het stelt gebruikers in staat om verschillende slimme apparaten, zoals thermostaten, verlichting, 
-          beveiligingscamera's, deursloten en meer, te verbinden en te beheren via een centrale hub. 
-          Home Assistant biedt gebruikers een krachtige en flexibele oplossing om hun slimme huisapparaten te integreren, 
-          automatiseren en beheren, terwijl ze tegelijkertijd controle hebben over hun gegevens en privacy.
-        </p>
-      </div>
-      <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
-        <picture>
-         <img src="images/ha.png" alt="">
-        </picture>
-      </div>
-      <div class="col-12">
-        <h4>Op Hivset</h4>
-        <p>
-          Bij Hivset wordt Home Assistant gebruikt als centraal systeem. De dashboard zijn onderverdeeld op basis van de gebouwen. 
-          Zo is er een overzichtelijk systeem dat makkelijk leesbaar is en voor geen verwarring zorgt. Hivset maakt voornamelijk 
-          gebruik van Sonoff switches. Met deze switches kan je makkelijk over het internet een ander apparaat aan of uit schakelen.
-        </p>
-      </div>
-         
-    </div>
-    <br>
-    <hr size="7">
 
 
     <footer class="bg-dark text-center text-white">
